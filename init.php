@@ -21,3 +21,5 @@ $scripts->enqueueScripts();
 $styles->enqueueStyles();
 $shortcode->createShortCodes();
 $settingsPage->renderPage();
+
+

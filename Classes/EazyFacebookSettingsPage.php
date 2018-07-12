@@ -29,10 +29,6 @@ class EazyFacebookSettingsPage extends EazyFacebookSystem {
     }
 
     public function eazy_facebook_settings_init() {
-        
-    }
-
-    public function eazy_facebook_settings_init() {
         try {
             register_setting('eazy_facebook', 'eazy_facebook_settings');
 

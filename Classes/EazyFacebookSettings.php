@@ -619,9 +619,11 @@ class EazyFacebookSettings {
                 if ($i <= (static::$columnsSize - 1)) {
                     $sql .= ', ';
                 }
+
+                $i++;
             }
 
-            $sql .= 'FROM ' . static::$tableName . ' WHERE Id=' . static::$settingsID;
+            $sql .= ' FROM ' . static::$tableName . ' WHERE Id=' . static::$settingsID;
 
             $options = $wpdb->get_row($sql, ARRAY_A);
 
